@@ -1,15 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="dndApp">
     <head>
       <meta charset="utf-8">
       <title>DnD 5th Edition Utilities</title>
+      <base href="/dnd/5e/">
       <meta name="description" content="DnD 5th Edition Utilities">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="app.css" crossorigin="anonymous">
     </head>
     <body>
+      <div ng-controller="SidebarCtrl" class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link {{activePath() == 'home' ? 'active' : ''}}" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link {{activePath() == 'trigonometry' ? 'active' : ''}}" href="#trigonometry">Trigonometry</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js"></script>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <div ng-view></div>
+      </main>
+
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+      <script type="text/javascript" src="trigonometry/trigonometry.js"></script>
     </body>
 </html>
 
