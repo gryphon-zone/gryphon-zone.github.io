@@ -1,52 +1,62 @@
 <div class="trigonometry">
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">A</span>
-    <span class="input-group-text"><input type="radio" aria-label="Radio button for following text input" value="a" ng-model="data.checkbox"></span>
-  </div>
-  <input    type="number" 
-            step="any" 
-            min="0" 
-            class="form-control" 
-            aria-label="Dollar amount (with dot and two decimal places)" 
-            ng-readonly="data.checkbox == 'a'" 
-            ng-model="data.boxes['a']" 
-            ng-keypress="functions.keyPress($event, 'a')" 
-            ng-keyup="functions.recalculate('a')"
-            />
-</div>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-3">
+        <div class="input-group mb-3">
+          
+          <div class="input-group-prepend">
+            <span class="input-group-text">A</span>
+            <span class="input-group-text"><input type="radio" aria-label="Radio button for following text input" value="a" ng-model="data.checkbox"></span>
+          </div>
+          <input  type="number" 
+                  step="any" 
+                  min="0" 
+                  class="form-control" 
+                  aria-label="Dollar amount (with dot and two decimal places)" 
+                  ng-readonly="data.checkbox == 'a'" 
+                  ng-model="data.boxes['a']" 
+                  ng-keypress="functions.keyPress($event, 'a')" 
+                  ng-keyup="functions.recalculate('a')"
+                  />
+        </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">B</span>
-    <span class="input-group-text"><input type="radio" aria-label="Radio button for following text input" value="b" ng-model="data.checkbox"></span>
-  </div>
-  <input    type="number" 
-            step="any" 
-            min="0" 
-            class="form-control" 
-            aria-label="Dollar amount (with dot and two decimal places)" 
-            ng-readonly="data.checkbox == 'b'" 
-            ng-model="data.boxes['b']" 
-            ng-keypress="functions.keyPress($event, 'b')" 
-            ng-keyup="functions.recalculate('b')"
-            />
-</div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">B</span>
+            <span class="input-group-text"><input type="radio" aria-label="Radio button for following text input" value="b" ng-model="data.checkbox"></span>
+          </div>
+          <input  type="number" 
+                  step="any" 
+                  min="0" 
+                  class="form-control" 
+                  aria-label="Dollar amount (with dot and two decimal places)" 
+                  ng-readonly="data.checkbox == 'b'" 
+                  ng-model="data.boxes['b']" 
+                  ng-keypress="functions.keyPress($event, 'b')" 
+                  ng-keyup="functions.recalculate('b')"
+                  />
+        </div>
 
-<div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">C</span>
-    <span class="input-group-text"><input type="radio" aria-label="Radio button for following text input" value="c" ng-model="data.checkbox"></span>
-  </div>
-  <input    type="number" 
-            step="any" 
-            min="0" 
-            class="form-control" 
-            aria-label="Dollar amount (with dot and two decimal places)" 
-            ng-readonly="data.checkbox == 'c'" 
-            ng-model="data.boxes['c']" 
-            ng-keypress="functions.keyPress($event, 'c')" 
-            ng-keyup="functions.recalculate('c')"
-            />
-</div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">C</span>
+            <span class="input-group-text"><input type="radio" aria-label="Radio button for following text input" value="c" ng-model="data.checkbox"></span>
+          </div>
+          <input  type="number" 
+                  step="any" 
+                  min="0" 
+                  class="form-control" 
+                  aria-label="Dollar amount (with dot and two decimal places)" 
+                  ng-readonly="data.checkbox == 'c'" 
+                  ng-model="data.boxes['c']" 
+                  ng-keypress="functions.keyPress($event, 'c')" 
+                  ng-keyup="functions.recalculate('c')"
+                  />
+        </div>
+      </div>
+      <div class="form-group col-md-9">
+        <img src="trigonometry/pythagorean.svg" class="img-fluid img-thumbnail img-pythag" alt="Responsive image">
+      </div>
+    </div>
+  </form>
 </div>
