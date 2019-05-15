@@ -40,21 +40,16 @@ body {
 
 .sidebar .nav-link {
   font-weight: 500;
-  color: #333;
-}
-
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999;
+  font-size: large;
+  color: #eef;
 }
 
 .sidebar .nav-link.active {
-  color: #007bff;
+  color: #aac;
 }
 
-.sidebar .nav-link:hover .feather,
-.sidebar .nav-link.active .feather {
-  color: inherit;
+.sidebar .nav-link:hover {
+  color: #88a;
 }
 
 .sidebar-heading {
@@ -76,6 +71,21 @@ body {
   }
 }
 
+main {
+  color: #eee;
+  background: #4c4c53;
+  height: calc(100vh);
+}
+
+.form-control {
+  background-color: #eee;
+  color: #454545;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #ccc;
+}
+
 /*
  * Navbar
  */
@@ -84,7 +94,7 @@ body {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, .25);
+  /*background-color: rgba(0, 0, 0, .25);*/
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 
@@ -96,7 +106,7 @@ body {
 
 .form-control-dark {
   color: #fff;
-  background-color: rgba(255, 255, 255, .1);
+  /*background-color: rgba(255, 255, 255, .1);*/
   border-color: rgba(255, 255, 255, .1);
 }
 
